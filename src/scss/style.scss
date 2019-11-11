@@ -41,6 +41,14 @@
     &:hover {
       background-color: $primary-color;
     }
+
+    &:hover .icons-container-b__icon-item {
+      opacity: 1;
+    }
+  }
+
+  &__icon-item {
+    opacity: .5;
   }
 }
 
