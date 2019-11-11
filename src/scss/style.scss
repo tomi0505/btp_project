@@ -3,19 +3,52 @@
 @import 'mixin';
 @import 'settings';
 
+.custom-font-h {
+  font-family: 'Raleway';
+}
+
 .header-b {
   border-top: 11px solid $primary-color;
   background-image: url('../_assets/img/bg-header.jpeg');
   background-size: cover;
 }
 
+.logo-b {
+  font-family: 'Pacifico';
+
+  &__dot {
+    color: $primary-color;
+  }
+}
+
 .icons-container-b {
   &__simple-icon-container {
-    background-color: rgba(0,0,0,.7);
+    width: 54px;
+    height: 54px;
+    line-height: 54px;
+    background-color: rgba(0,0,0,.5);
+
+    &--medium-size {
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+    }
 
     &:hover {
       background-color: $primary-color;
     }
+  }
+}
+
+.newsletter-form-b {
+  &__send-form-btn {
+    background-color: $primary-color !important;
+  }
+}
+
+.testimonials-b {
+  &__cite {
+    font-style: normal;
   }
 }
 
@@ -24,10 +57,12 @@
   background-color: $secondary-color;
 }
 
-.slick-slide {
-  height:51px;
-}
+.slick-testimonials-face-slider-b {
+  .slick-slide {
+    height:51px;
 
-.slick-slide img {
-  height:51px;
+    img {
+      height:51px;
+    }
+  }
 }
