@@ -40,6 +40,15 @@
   }
 }
 
+.our-offer-b {
+  &__img-container {
+    width: 98px;
+    height: 98px;
+    line-height: 98px;
+    background-color: $primary-color;
+  }
+}
+
 .newsletter-form-b {
   &__send-form-btn {
     background-color: $primary-color !important;

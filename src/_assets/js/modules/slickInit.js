@@ -4,7 +4,16 @@ const slickTestimonialsFace = function() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    arrows: false
+    arrows: false,
+    firstMobile: true,
+    responsive: [
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 6,
+        }
+      }
+    ]
   });
 };
 
