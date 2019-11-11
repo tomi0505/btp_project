@@ -2,7 +2,7 @@ const slickTestimonialsFace = function() {
   $('.slick-testimonials-face-slider-b').slick({
     slidesToShow: 21,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     arrows: false,
     firstMobile: true,

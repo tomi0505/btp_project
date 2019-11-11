@@ -11,6 +11,10 @@
   border-top: 11px solid $primary-color;
   background-image: url('../_assets/img/bg-header.jpeg');
   background-size: cover;
+
+  &__subtitle-content {
+    font-size: 1.2rem;
+  }
 }
 
 .logo-b {
@@ -70,10 +74,47 @@
 
 .slick-testimonials-face-slider-b {
   .slick-slide {
+    position: relative;
     height:51px;
+    cursor: pointer;
 
     img {
       height:51px;
     }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 51px;
+      height: 51px;
+      background-color: $primary-color;
+      opacity: 0;
+    }
+
+    &:hover::after {
+      opacity: .5;
+    }
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 51px;
+    height: 51px;
+    background-image: linear-gradient(to right, transparent, $white 75%);
+    z-index: 1001;
+  }
+
+  &::before {
+    content: "";
+    right: auto;
+    left: 0;
+    background-image: linear-gradient(to right, $white, transparent 75%);
   }
 }
