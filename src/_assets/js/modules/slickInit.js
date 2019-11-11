@@ -8,9 +8,27 @@ const slickTestimonialsFace = function() {
     firstMobile: true,
     responsive: [
       {
-        breakpoint: 575,
+        breakpoint: 576,
         settings: {
           slidesToShow: 6,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 9,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 12,
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 17,
         }
       }
     ]
