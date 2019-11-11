@@ -1,0 +1,33 @@
+@import "~bootstrap/scss/bootstrap";
+@import 'var';
+@import 'mixin';
+@import 'settings';
+
+.header-b {
+  border-top: 11px solid $primary-color;
+  background-image: url('../_assets/img/bg-header.jpeg');
+  background-size: cover;
+}
+
+.icons-container-b {
+  &__simple-icon-container {
+    background-color: rgba(0,0,0,.7);
+
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
+}
+
+.newsletter-b,
+.footer-b {
+  background-color: $secondary-color;
+}
+
+.slick-slide {
+  height:51px;
+}
+
+.slick-slide img {
+  height:51px;
+}
