@@ -64,6 +64,11 @@
 .newsletter-form-b {
   max-width: 446px;
 
+  &__email-input {
+    font-size: 0.9rem !important;
+    height: auto !important;
+  }
+
   &__send-form-btn {
     background-color: $primary-color !important;
   }

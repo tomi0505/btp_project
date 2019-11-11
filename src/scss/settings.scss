@@ -16,3 +16,10 @@ html {
 body {
   font-family: 'Gothic A1', Verdana, sans-serif;
 }
+
+@media (min-width: 1900px) {
+  body {
+    margin: 0 auto;
+    max-width: 1900px;
+  }
+}
